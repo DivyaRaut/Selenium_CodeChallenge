@@ -11,9 +11,8 @@ const apitempdifference = require("../getApiTempDiff");
 
 describe("Test", function() {
   describe("Comparison", function() {
-    it("should return -1 when the value is not present", function() {
+    it("should return FALSE if tempe comparison fails", function() {
       jsonData.forEach(element => {
-        console.log("JSon data is: " + element);
         const callback = result => {
           expect(result).to.be.true;
         };
